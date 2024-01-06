@@ -9,7 +9,11 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
+<<<<<<< HEAD
   border-left: 2px solid black;
+=======
+  border-left: 1px solid black;
+>>>>>>> d5dc06e6ef483566cc7f018efe49f627303a89ac
   padding: 10px;
 }
 
@@ -23,23 +27,30 @@ header {
 }
 
 .description {
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> d5dc06e6ef483566cc7f018efe49f627303a89ac
   white-space: pre-wrap;
 }
 
 .time-block {
   text-align: center;
   border-radius: 15px;
+<<<<<<< HEAD
   border-left: 2px solid black;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: #f5fafc;
   
+=======
+>>>>>>> d5dc06e6ef483566cc7f018efe49f627303a89ac
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
+<<<<<<< HEAD
   border-top: 3px solid rgb(8, 8, 8);
 }
 
@@ -51,15 +62,33 @@ header {
 
 .past {
   background-color: #e6dddd;
+=======
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+>>>>>>> d5dc06e6ef483566cc7f018efe49f627303a89ac
   color: white;
 }
 
 .present {
+<<<<<<< HEAD
   background-color: #f7726c;
+=======
+  background-color: #ff6961;
+>>>>>>> d5dc06e6ef483566cc7f018efe49f627303a89ac
   color: white;
 }
 
 .future {
+<<<<<<< HEAD
   background-color: #88a787;
   color: white
 }
@@ -69,6 +98,17 @@ header {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #0283a0;
+=======
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+>>>>>>> d5dc06e6ef483566cc7f018efe49f627303a89ac
   color: white;
 }
 
