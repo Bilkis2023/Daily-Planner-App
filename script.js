@@ -3,10 +3,10 @@ var timeblockEl = document.querySelector('#time');
 var textAreaEl = document.querySelector('#text-area-14');
 var saveButtonEl = $('.save-btn');
 var today = dayjs();
-var time = dayjs().formet("HH:mm:ss");
-$.text(time);
+var time = dayjs().format("D MMM YYYY [ , ] HH:mm:ss");
+$("#currentDay").text(time);
 
-console.log(textAreaEl);
+// console.log(#textAreaEl);
 
 
 var time = dayjs().format("HH");
@@ -28,11 +28,7 @@ addButton.addEventListener("click", function () {
     localStorage.setItem("recenttext", recenttext);
 });
 
-subtractButton.addEventListener("click", function () {
-    count--;
-    counter.textContent = count;
-    localStorage.setItem("count", count);
-})
+
 
 
 
@@ -46,7 +42,10 @@ function renderLastSave() {
 
 saveButtonEl.click(function (e) {
     e.preventDefault()
-    console.log("save button")
+    console.log("save button");
+    var recenttext = textAreaEl.textContent;
+    localStorage.setItem("", recenttext);
+    console.log(e.target)
 });
 
 
