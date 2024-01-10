@@ -2,6 +2,9 @@ var timeblockEl = document.querySelector('#time');
 
 var textAreaEl = document.querySelector('#text-area-14');
 var saveButtonEl = $('.save-btn');
+var today = dayjs();
+var time = dayjs().formet("HH:mm:ss");
+$.text(time);
 
 console.log(textAreaEl);
 
@@ -18,17 +21,17 @@ var count = localStorage.getItem("count");
 counter.textContent = count;
 
 
- // TODO: edit this to save the text area's inner text content
-addButton.addEventListener("click", function(){
+// TODO: edit this to save the text area's inner text content
+addButton.addEventListener("click", function () {
     count++;
-   var recenttext = textAreaEl.textContent ;
+    var recenttext = textAreaEl.textContent;
     localStorage.setItem("recenttext", recenttext);
 });
 
-subtractButton.addEventListener("click", function(){
+subtractButton.addEventListener("click", function () {
     count--;
     counter.textContent = count;
-    localStorage.setItem("count",count);
+    localStorage.setItem("count", count);
 })
 
 
@@ -41,14 +44,14 @@ function renderLastSave() {
     }
 }
 
-saveButtonEl.click(function(e){
+saveButtonEl.click(function (e) {
     e.preventDefault()
-    console.log("save button") 
+    console.log("save button")
 });
 
 
 
- 
+
 
 
 
