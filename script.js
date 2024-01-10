@@ -1,52 +1,35 @@
 var timeblockEl = document.querySelector('#time');
 
-var textAreaEl = document.querySelector('#text-area');
+var textAreaEl = document.querySelector('#text-area-14');
 var saveButtonEl = $('.save-btn');
 
-console.log(textAreaEl.value);
+console.log(textAreaEl);
 
 
-var time = day.js().format("HH");
+var time = dayjs().format("HH");
 console.log(time);
 
 
 var counter = document.querySelector("#counter");
-var addButton = document.querySelector("#add");
-var subtracButton = document.querySelector("#subtract");
+var addButton = document.querySelector("#add-2");
+var subtractButton = document.querySelector("#subtract");
 
 var count = localStorage.getItem("count");
 counter.textContent = count;
+
+
+ // TODO: edit this to save the text area's inner text content
 addButton.addEventListener("click", function(){
     count++;
-    counter.textContent = count;
-    localStorage.setItem("count", count);
+   var recenttext = textAreaEl.textContent ;
+    localStorage.setItem("recenttext", recenttext);
 });
 
-suntractButton.addEventListener("click", function(){
+subtractButton.addEventListener("click", function(){
     count--;
     counter.textContent = count;
     localStorage.setItem("count",count);
 })
-
-
-
-
-
-
-
-
-
-if (timeblock < currentTime) {
-    var time = day.js().formet();
-}
- else if (timeblock = currentTime) {
-    var time = day.js().formet()
-} else {
-    (timeblock > currentTime)
-    var time = day.js().formet()
-};
-
-
 
 
 
